@@ -1,0 +1,68 @@
+Project Title:
+
+Spatio-Temporal Hotspot Detection and Trend Analysis of Road Crashes in Victoria
+
+Guiding Question(s)
+
+The project seeks to answer the following guiding questions:
+
+Where are the most frequent and severe road crash hotspots located across Victoria?
+
+When (time of day, day of week, season) do crash risks peak in these locations?
+
+How do crash trends evolve over time, and can we detect emerging high-risk areas?
+
+Can streaming data be used to provide real-time insights or alerts about crash trends using Kafka?
+
+How I Will Answer the Guiding Question (Practical Work)
+
+To answer these questions, the following practical steps will be taken:
+
+Data Acquisition and Preparation:
+
+Download the Victorian Road Crash Dataset from the Open Data Portal
+.
+
+Clean and preprocess the data using R (handle missing values, convert date/time columns, and ensure geographic coordinates are properly formatted).
+
+Data Streaming and Integration (Kafka):
+
+Use Apache Kafka to simulate or stream crash data in real time.
+
+Set up Kafka producers (to send crash data records) and consumers (in R, to process and visualize data dynamically).
+
+Demonstrate how Kafka can support real-time hotspot detection or trend monitoring.
+
+Exploratory and Spatial Analysis (in R):
+
+Use ggplot2, sf, and leaflet packages to map crash locations and visualize spatial density.
+
+Apply spatial clustering methods (e.g., K-means, DBSCAN, or Kernel Density Estimation) to identify crash hotspots.
+
+Temporal and Trend Analysis:
+
+Use R’s time-series libraries (e.g., forecast, tsibble, prophet) to analyze trends by hour, day, and year.
+
+Detect seasonal patterns and time-based variations in crash frequency.
+
+Spatio-Temporal Insights:
+
+Combine spatial and temporal outputs to show how hotspots change over time.
+
+Present findings through interactive dashboards or animated visualizations (e.g., Shiny, gganimate).
+
+Reporting and Interpretation:
+
+Interpret hotspot patterns and trends.
+
+Discuss how this analysis could help policymakers plan road-safety measures or resource allocation.
+
+Tools and Technologies
+Category	Tools / Technologies
+Programming Language	R
+Data Streaming	Apache Kafka
+Data Processing & Analysis	dplyr, tidyr, lubridate
+Spatial Analysis	sf, sp, leaflet, ggmap
+Clustering / Statistics	DBSCAN, K-means, Kernel Density Estimation
+Time-Series Analysis	forecast, tsibble, prophet
+Visualization / Dashboard	ggplot2, plotly, Shiny
