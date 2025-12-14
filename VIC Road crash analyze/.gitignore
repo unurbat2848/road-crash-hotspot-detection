@@ -1,0 +1,314 @@
+# ============================================================================
+# .gitignore for Victorian Road Crash Analysis Project
+# ============================================================================
+
+# ============================================================================
+# R Files
+# ============================================================================
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
+
+# User-specific files
+.Ruserdata
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+*.Rproj
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# R Environment Variables
+.Renviron
+
+# pkgdown site
+docs/
+
+# translation temp files
+po/*~
+
+# RStudio Connect folder
+rsconnect/
+
+# ============================================================================
+# Data Files (Large CSV and RDS files)
+# ============================================================================
+
+# Raw data files (already in repository or too large)
+data/*.csv
+data/*.txt
+data/*.xlsx
+data/*.xls
+
+# Keep the PDF reference document
+!data/*.pdf
+
+# Processed data files
+output/data/*.rds
+output/data/*.csv
+output/data/*.RData
+
+# Keep directory structure but ignore contents
+output/data/.gitkeep
+
+# ============================================================================
+# Output Files
+# ============================================================================
+
+# Generated figures and plots (KEEP for portfolio display)
+# output/figures/*.png
+# output/figures/*.jpg
+# output/figures/*.jpeg
+# output/figures/*.pdf
+# output/figures/*.svg
+# output/figures/*.gif
+
+# Reports
+output/reports/*.html
+output/reports/*.pdf
+output/reports/*.docx
+output/reports/*.tex
+
+# Kafka logs
+output/kafka_logs/*.csv
+output/kafka_logs/*.json
+output/kafka_logs/*.log
+output/kafka_logs/*.txt
+
+# Models (can be large)
+output/models/*.rds
+output/models/*.RData
+
+# Keep directory structure
+output/figures/.gitkeep
+output/reports/.gitkeep
+output/kafka_logs/.gitkeep
+output/models/.gitkeep
+
+# ============================================================================
+# Kafka Files
+# ============================================================================
+
+# Kafka data directory
+kafka_data/
+kafka-logs/
+
+# Kafka downloaded binaries
+kafka_*/
+kafka*.tgz
+kafka*.tar.gz
+
+# Zookeeper data
+zookeeper/
+zkdata/
+
+# ============================================================================
+# Shiny App
+# ============================================================================
+
+# Shiny deployment files
+shiny_app/rsconnect/
+
+# Shiny logs
+shiny_app/*.log
+
+# ============================================================================
+# OS Files
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================================================
+# IDE Files
+# ============================================================================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================================
+# Temporary Files
+# ============================================================================
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~.nib
+
+# Log files
+*.log
+
+# ============================================================================
+# Package Management
+# ============================================================================
+
+# renv (R environment management)
+renv/
+renv.lock
+
+# packrat
+packrat/lib*/
+packrat/src/
+
+# ============================================================================
+# Credentials & Secrets
+# ============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Credentials
+credentials.json
+secrets.yaml
+secrets.yml
+*.key
+*.pem
+
+# API keys
+api_keys.txt
+config/secrets/
+
+# ============================================================================
+# Docker
+# ============================================================================
+
+# Docker files (if using docker-compose for Kafka)
+# docker-compose.override.yml
+
+# ============================================================================
+# Specific Project Files to Ignore
+# ============================================================================
+
+# Large processed datasets (keep only cleaned version)
+output/
+data/
+
+# Keep only final cleaned dataset for sharing (if small enough)
+# Uncomment if cleaned data is too large
+# output/data/crashes_cleaned.rds
+# output/data/crashes_cleaned.csv
+
+# ============================================================================
+# Documentation (Keep these)
+# ============================================================================
+
+# Keep all markdown documentation
+!*.md
+!README.md
+!*.Rmd
+
+# Keep R scripts
+!scripts/*.R
+
+# Keep Shiny app files
+!shiny_app/*.R
+!shiny_app/www/*
+
+# Keep Kafka setup scripts
+!kafka_setup/*.sh
+!kafka_setup/*.md
+
+# Keep requirements
+!requirements.R
+
+# ============================================================================
+# Testing & Development
+# ============================================================================
+
+# Test files
+test_*.R
+debug_*.R
+
+# Scratch files
+scratch/
+temp/
+sandbox/
+
+# ============================================================================
+# Archives
+# ============================================================================
+
+# Compressed files
+*.zip
+*.rar
+*.7z
+*.tar
+
+# Except the original Kafka download in setup
+!kafka_setup/*.tar.gz
+
+# exclude dataset
+output/data/
+data/*
+
+# ============================================================================
+# KEEP FOR PORTFOLIO (override above rules)
+# ============================================================================
+
+# Keep visualization outputs for README display
+!output/figures/
+!output/figures/*.png
+!output/figures/*.html
+!output/figures/interactive_hotspot_map.html
+
+# ============================================================================
+# End of .gitignore
+# ============================================================================
